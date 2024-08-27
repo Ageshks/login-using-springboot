@@ -20,7 +20,7 @@ public class SecurityConfig {
     public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
         http
             .authorizeHttpRequests((requests) -> requests
-                .requestMatchers("/", "/home", "/css/**", "/js/**", "/images/**").permitAll() // Allow access to static resources
+                .requestMatchers("/", "/home", "/css/**").permitAll() // Allow access to static resources
                 .anyRequest().authenticated()
             )
             .formLogin((form) -> form
