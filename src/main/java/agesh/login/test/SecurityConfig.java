@@ -25,10 +25,11 @@ public class SecurityConfig {
             )
             .formLogin((form) -> form
                 .loginPage("/login")
+                .defaultSuccessUrl("/dashboard", true) // Redirect to dashboard after login
                 .permitAll()
             )
             .logout((logout) -> logout.permitAll());
-
+    
         return http.build();
     }
 

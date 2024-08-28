@@ -1,19 +1,13 @@
+<!-- src/main/resources/templates/dashboard.html -->
 <!DOCTYPE html>
-<html lang="en">
+<html xmlns:th="http://www.thymeleaf.org">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>dashboard</title>
+    <title>Dashboard</title>
+    <link rel="stylesheet" th:href="@{/css/styles.css}">
 </head>
 <body>
-    <div class="first">
-        <div class="first1">
-            <h1>welcome</h1>
-            <button>log out</button>
-        </div>
-    </div>
-    <h2>i am glad you are here now you can get out!!!</h2>
-    <h2>i am glad you are here now you can get out!!!</h2>
-    <h2>sorry</h2>
+    <h2>Welcome to the Dashboard</h2>
+    <p>Hello, <span th:text="${#httpServletRequest.remoteUser}"></span>!</p>
+    <a th:href="@{/logout}">Logout</a>
 </body>
 </html>
