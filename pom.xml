@@ -35,10 +35,11 @@
 
         <!-- MySQL Connector -->
         <dependency>
-            <groupId>mysql</groupId>
-            <artifactId>mysql-connector-java</artifactId>
-            <version>8.0.33</version> <!-- Replace with the version you need -->
-        </dependency>
+    <groupId>mysql</groupId>
+    <artifactId>mysql-connector-java</artifactId>
+    <version>8.0.33</version> <!-- Ensure you have a compatible version -->
+</dependency>
+
 
         <!-- Spring Boot Starter Security -->
         <dependency>
