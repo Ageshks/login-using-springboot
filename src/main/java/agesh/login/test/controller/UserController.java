@@ -30,7 +30,7 @@ public class UserController {
         return "login";
     }
 
-    @GetMapping("/dashboard")
+    @GetMapping("/login/dashboard")
     public String showDashboard() {
         return "dashboard";
     }
